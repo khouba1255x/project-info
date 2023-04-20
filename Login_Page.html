@@ -3,15 +3,16 @@
 
 <head>
     <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="Login_Page.css">
 </head>
 
 <body>
     <h1>Login Page</h1>
-    <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname"><br>
+    <form name="formule" action="School_Schedule.html">
+        <!-- name -->
+        <label for="fname">Name:</label><br>
+        <input type="text" id="name" name="name" size="10" maxlength="15"><br>
+        <!-- Section -->
         <label for="level">Level:</label><br>
         <select id="level" name="level">
 			<option value="1">Informatique</option>
@@ -19,11 +20,16 @@
 			<option value="3">Lettre</option>
             <option value="4">Economie</option>
 		</select><br>
+        <!-- Email -->
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email"><br>
+        <!-- Password -->
         <label for="password">Password:</label><br>
         <input type="password" id="password" name="password"><br>
-        <input type="submit" value="Submit">
+        <!-- send or delet -->
+        <p><input type="submit" value="Submit">
+            <input type="reset" value="reset">
+        </p>
     </form>
 </body>
 
