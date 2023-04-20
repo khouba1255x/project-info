@@ -1,56 +1,19 @@
-/* تغيير لون خلفية الصفحة */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
 
 body {
-    background-color: #f2f2f2;
+    background: url('img_licey.jpg') no-repeat;
+    background-size: cover;
 }
 
-
-/* تنسيق عنصر h1 */
-
-h1 {
-    color: #333;
-    font-size: 36px;
-    text-align: center;
-    margin-top: 50px;
-}
-
-
-/* تنسيق العنصر label */
-
-label {
-    display: block;
-    margin-top: 20px;
-    color: #666;
-}
-
-
-/* تنسيق الحقول النصية */
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-select {
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-top: 5px;
-    width: 100%;
-}
-
-
-/* تنسيق زر الإرسال */
-
-input[type="submit"] {
-    background-color: #4CAF50;
-    border: none;
+. login-form {
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
     color: #fff;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px;
-    margin-top: 20px;
-    width: 100%;
 }
