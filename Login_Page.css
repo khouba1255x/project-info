@@ -1,52 +1,61 @@
-body {
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
+    font-family: sans-serif;
 }
 
-h1 {
-    color: #333;
+body {
+    background: url('img_licey.jpg') no-repeat;
+    background-size: cover;
+}
+
+.login-form {
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #fff;
+}
+
+.login-form h1 {
     text-align: center;
-    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
-form {
-    width: 400px;
-    margin: 0 auto;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-input[type=text],
-select,
-input[type=email],
-input[type=password] {
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    font-size: 16px;
     margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
 }
 
-input[type=submit] {
+.login-form input[type="submit"],
+.login-form input[type="reset"] {
     background-color: #4CAF50;
-    color: #fff;
-    border: none;
+    color: white;
     padding: 10px 20px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    margin-right: 10px;
 }
 
-input[type=submit]:hover {
-    background-color: #3e8e41;
+.login-form input[type="reset"] {
+    background-color: #f44336;
+}
+
+.login-form input[type="submit"]:hover,
+.login-form input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+.login-form p {
+    text-align: center;
+    margin-top: 15px;
 }
