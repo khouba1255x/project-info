@@ -27,15 +27,14 @@ body {
 
 .container {
     width: 40%;
-    height: 400px;
+    height: auto;
     position: relative;
-    box-shadow: 0 10px rgb(40, 40, 40 0.5);
-    overflow: hidden;
+    box-shadow: 0 10px rgba(40, 40, 40 0.5);
 }
 
 img {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
     border: solid;
 }
 
@@ -54,6 +53,7 @@ img {
     background: black;
     cursor: pointer;
     z-index: 1;
+    height: 100%;
 }
 
 
@@ -69,20 +69,6 @@ img {
     font-family: verdana;
     text-align: center;
     z-index: 2;
-}
-
-.overlay1,
-.overlay2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    background: black;
-    cursor: pointer;
-    z-index: 1;
 }
 
 .overlay1:hover,
