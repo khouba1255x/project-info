@@ -1,0 +1,91 @@
+/* Reset default browser styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Style the body */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+/* Style the header */
+
+header {
+    background-color: #eee;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* Style the logo */
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+
+/* Style the navigation */
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ccc;
+}
+
+
+/* Style the main content */
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+main p {
+    margin-bottom: 20px;
+}
+
+
+/* Style the footer */
+
+footer {
+    background-color: #eee;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
