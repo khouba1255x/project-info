@@ -2,10 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'poppins';
 }
 
 body {
-    background-color: beige;
+    background-color: rgb(223, 220, 214);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 
@@ -42,7 +46,8 @@ img {
 /* الـ overlay */
 
 .overlay1,
-.overlay2 {
+.overlay2,
+.overlay3 {
     position: absolute;
     top: 0;
     left: 0;
@@ -60,7 +65,8 @@ img {
 /* المحتوى */
 
 .content1,
-.content2 {
+.content2,
+.content3 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -72,6 +78,47 @@ img {
 }
 
 .overlay1:hover,
-.overlay2:hover {
+.overlay2:hover,
+.overlay3:hover {
     opacity: 0.8;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(26, 26, 36);
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.animation {
+    position: relative;
+}
+
+.animation h1 {
+    font-size: 2em;
+    position: absolute;
+}
+
+.animation h1:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+
+.animation h1:nth-child(2) {
+    color: #03a9f4;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        clip-path: polygon(0 47%, 15% 57%, 25% 59%, 37% 59%, 47% 44%, 60% 46%, 71% 44%, 88% 43%, 100% 43%, 99% 99%, 0% 99%);
+    }
+    50% {
+        clip-path: polygon(0 47%, 15% 48%, 25% 46%, 35% 46%, 50% 57%, 60% 54%, 71% 55%, 86% 54%, 100% 55%, 99% 99%, 0% 99%);
+    }
 }
