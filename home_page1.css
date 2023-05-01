@@ -5,7 +5,7 @@ body {
 }
 
 .wrapper {
-    background: url(image_background_home_page.jpg) no-repeat center center;
+    background: url(image_background_home_page11.jpg) no-repeat center center;
     min-height: 100vh;
     /* لجعل العرض يمتد على ارتفاع الشاشة */
     background-size: cover;
@@ -37,9 +37,8 @@ nav ul li a {
 }
 
 img {
-    width: 14%;
+    width: 8%;
     margin-left: 1.9rem;
-    margin-top: -4%;
 }
 
 nav ul li:hover {
