@@ -58,6 +58,20 @@
         </div>
     </div>
     <a href="Home_page.html" class="back-btn">home page</a>
+
+    <!--The music-->
+
+    <div id="audio-player">
+        <audio autoplay loop>
+            <source src="music2.m4a" type="audio/mp3">
+            <source src="music2.m4a" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+        <div id="audio-controls">
+            <button onclick="document.querySelector('audio').pause()">Pause</button>
+            <button onclick="document.querySelector('audio').play()">Play</button>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -126,3 +126,26 @@ footer {
 
 
 /*THE END*/
+
+
+/*the music*/
+
+#audio-player {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#audio-player audio {
+    width: 100%;
+}
+
+#audio-controls {
+    display: inline-block;
+    margin-top: 10px;
+}
